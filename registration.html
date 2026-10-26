@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration | Manoraj Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="registration.css">
+</head>
+<body>
+<main class="room" id="room">
+  <a class="back" href="index.html">← Back to Portfolio</a>
+
+  <div class="lamp" aria-hidden="false">
+    <i class="wire"></i>
+    <i class="bulb"></i>
+    <svg class="shade" viewBox="0 0 200 100" aria-hidden="true">
+      <defs>
+        <linearGradient id="sg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1b2133"/><stop offset=".45" stop-color="#3a4462"/><stop offset="1" stop-color="#141a2a"/></linearGradient>
+      </defs>
+      <path d="M72 0h56l72 100H0z" fill="url(#sg)"/>
+      <ellipse cx="100" cy="100" rx="100" ry="6" class="rim"/>
+    </svg>
+    <div class="cord-wrap" id="cordWrap">
+      <i class="cord"></i>
+      <button type="button" class="pull" id="pull" aria-pressed="false" aria-label="Pull to turn the lamp on"></button>
+    </div>
+    <div class="cone" aria-hidden="true"></div>
+  </div>
+
+  <div class="card-wrap">
+    <p class="hint" id="hint">Pull the cord to turn on the light</p>
+    <section class="reg-card" id="regCard">
+      <div class="form-header">
+        <span class="badge">✦ CONNECT WITH ME</span>
+        <h1>Registration Form</h1>
+        <p>Let's connect! Enter your details to get started.</p>
+      </div>
+
+      <form id="registrationForm" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" autocomplete="name">
+          <small id="nameError"></small>
+        </div>
+        <div class="form-group">
+          <label for="gmail">Gmail Address</label>
+          <input type="email" id="gmail" placeholder="example@gmail.com" autocomplete="email">
+          <small id="gmailError"></small>
+        </div>
+        <div class="form-group">
+          <label for="college">College Name</label>
+          <input type="text" id="college" placeholder="Enter your college name" autocomplete="organization">
+          <small id="collegeError"></small>
+        </div>
+        <div class="form-group">
+          <label for="area">Area / City</label>
+          <input type="text" id="area" placeholder="Enter your area or city" autocomplete="address-level2">
+          <small id="areaError"></small>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter 10-digit mobile number" autocomplete="tel" maxlength="10" inputmode="numeric">
+          <small id="phoneError"></small>
+        </div>
+
+        <button type="submit" id="submitBtn"><span>Submit Registration</span><span class="arrow">→</span></button>
+
+        <div id="successMessage" class="success-message" role="status" aria-live="polite" hidden>
+          <div class="success-icon">✓</div>
+          <h2>Registration Successful!</h2>
+          <p>Thank you for connecting with me. All your details are valid.</p>
+        </div>
+      </form>
+    </section>
+  </div>
+</main>
+
+<script src="registration.js" defer></script>
+<script src="lamp.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manoraj S | Java Full Stack Developer</title>
+<meta name="description" content="Portfolio of Manoraj S, a Java Full Stack Developer building web applications with Java, Spring Boot, React and MySQL.">
+<meta name="theme-color" content="#05070f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project-manager.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="cinematic.js" defer></script>
+<script src="project-manager.js" defer></script>
+</head>
+<body>
+<div id="loader"><div class="ld-num"><span id="ldNum">0</span>%</div><div class="ld-bar"><i id="ldBar"></i></div></div>
+<div id="progress"></div>
+<div id="glow"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header class="nav-wrap">
+  <a href="#home" class="logo" aria-label="Home">M</a>
+  <nav class="pill" aria-label="Main">
+    <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+  <a href="registration.html" class="cta register-btn">Register <span>↗</span></a>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <p class="eyebrow" data-r>✦ Available for internships &amp; junior roles</p>
+  <h1 class="split" aria-label="Hello, I'm Manoraj">
+    <span class="w"><b>Hello,</b></span> <span class="w"><b>I'm</b></span> <span class="w"><b class="grad">Manoraj.</b></span>
+  </h1>
+  <h2 class="role" data-r>Java Full Stack <em>Developer</em></h2>
+  <p class="lead" data-r>BSc Computer Science student building clean, fast web applications with Java, Spring Boot, React and MySQL.</p>
+  <div class="hero-actions" data-r>
+    <a href="#projects" class="btn solid">View My Work <span>↗</span></a>
+    <a href="#contact" class="btn ghost">Contact</a>
+  </div>
+  <aside class="stats" aria-label="Highlights">
+    <div class="glass"><strong data-count="3">0</strong><small>Projects built</small></div>
+    <div class="glass"><strong data-count="2027">0</strong><small>Graduation</small></div>
+  </aside>
+  <div class="scroll-hint">Scroll<i></i></div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>React.js</span><span>JavaScript</span><span>MySQL</span><span>Git &amp; GitHub</span><span>HTML5</span><span>CSS3</span>
+  <span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>React.js</span><span>JavaScript</span><span>MySQL</span><span>Git &amp; GitHub</span><span>HTML5</span><span>CSS3</span>
+</div></div>
+
+<section id="about" class="block">
+  <p class="label" data-r>01 / About</p>
+  <h2 data-r>Passionate about building <em>useful</em> web apps.</h2>
+  <div class="two">
+    <p data-r>I am a B.Sc. Computer Science student with hands-on experience in HTML, CSS, JavaScript, React, Java and MySQL.</p>
+    <p data-r>My goal is to become a professional Java Full Stack Developer and ship applications that solve real problems.</p>
+  </div>
+</section>
+
+<section id="skills" class="block">
+  <p class="label" data-r>02 / Skills</p>
+  <h2 data-r>My toolkit</h2>
+  <div class="grid4">
+    <article class="glass tilt" data-r><h3>Frontend</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React.js</li></ul></article>
+    <article class="glass tilt" data-r><h3>Backend</h3><ul><li>Java</li><li>Spring Boot</li><li>REST APIs</li></ul></article>
+    <article class="glass tilt" data-r><h3>Database</h3><ul><li>MySQL</li><li>RDBMS</li></ul></article>
+    <article class="glass tilt" data-r><h3>Tools</h3><ul><li>Git</li><li>GitHub</li><li>VS Code</li></ul></article>
+  </div>
+</section>
+
+<section id="projects" class="block">
+  <p class="label" data-r>03 / Projects</p>
+  <h2 data-r>Selected work</h2>
+  <div class="pj-list">
+    <article class="glass tilt" data-r><span class="num">01</span><h3>NourishConnect</h3><p>A web application connecting food donors with people who need food.</p></article>
+    <article class="glass tilt" data-r><span class="num">02</span><h3>Weather Website</h3><p>A simple, user-friendly website for displaying weather information.</p></article>
+    <article class="glass tilt" data-r><span class="num">03</span><h3>LinkedIn Growth Website</h3><p>A website presenting professional networking and career growth information.</p></article>
+  </div>
+  <button id="addProjectBtn" class="add-project-btn">+ Add New Project</button>
+  <div id="projectsGrid" class="projects-grid"></div>
+</section>
+
+<section id="education" class="block">
+  <p class="label" data-r>04 / Education</p>
+  <h2 data-r>Learning path</h2>
+  <article class="glass edu" data-r>
+    <h3>B.Sc. Computer Science</h3>
+    <p>Nehru Memorial College · Bharathidasan University</p>
+    <small>Expected graduation: 2027</small>
+  </article>
+</section>
+
+<section id="contact" class="block contact">
+  <p class="label" data-r>05 / Contact</p>
+  <h2 data-r>Let's build something <em>together.</em></h2>
+  <p data-r>Email: <a href="mailto:manoraj.s@example.com">manoraj.s@example.com</a></p>
+  <div class="hero-actions" data-r>
+    <a class="btn solid" href="https://github.com/mano-005" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/manoraj-s-544679355/" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+</section>
+</main>
+
+<footer><p>&copy; 2026 Manoraj S. All rights reserved.</p></footer>
+</body>
+</html>
